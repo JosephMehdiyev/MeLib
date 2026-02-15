@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 4.2.0)
 
-project(linsolver
+project(MeLib
         VERSION 0.0.1
         DESCRIPTION "Personal Computation Library"
         LANGUAGES CXX C
@@ -25,6 +25,6 @@ set(SOURCE
     linEquation.cpp
     dataStructure/Mat.hpp
 )
-add_executable(linsolver  ${SOURCE})
-target_include_directories(linsolver PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/dataStructure)
+add_executable(melib  ${SOURCE})
+target_include_directories(melib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/dataStructure)
 
